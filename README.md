@@ -21,5 +21,5 @@ Set of python scripts, zabbix template, and associated data to do autodiscovery
  + template items in discovery have been set to zabbix agent (active) value: 7
 
 ## Definite kudo's to some of the other developers around the web.  In particularly,
-* Ptyhon Scripts: https://github.com/kmcminn/rabbit-nagios
+* Python Scripts: https://github.com/kmcminn/rabbit-nagios
 * Base idea for the Rabbit template:  https://github.com/alfss/zabbix-rabbitmq
