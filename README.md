@@ -16,6 +16,10 @@ Set of python scripts, zabbix template, and associated data to do autodiscovery
 3. Import the template to your zabbix server
 4. Restart the local zabbix agent
 
+##Changes
+ + Code wrapped around the shell script to handle a default vhost of /
+ + template items in discovery have been set to zabbix agent (active) value: 7
+
 ## Definite kudo's to some of the other developers around the web.  In particularly,
 * Ptyhon Scripts: https://github.com/kmcminn/rabbit-nagios
 * Base idea for the Rabbit template:  https://github.com/alfss/zabbix-rabbitmq

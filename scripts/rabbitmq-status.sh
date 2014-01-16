@@ -4,6 +4,11 @@
 . /etc/zabbix/scripts/.rab.auth
 
 VHOST=$1
+#handle a default java vhost of /
+if [ "$1" = "/" ]; then
+    VHOST="%2F"
+fi
+
 METRIC=$2
 QUEUE_NAME=$3
 
