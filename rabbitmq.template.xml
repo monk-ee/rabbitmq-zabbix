@@ -690,7 +690,7 @@
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>({Template App RabbitMQ:rabbitmq[{#VHOSTNAME},queue_msgs,{#QUEUENAME}].last(0)}&gt;1000)</expression>
-                            <name>{#NODENAME}/{#VHOSTNAME}/{#QUEUENAME} - CRITICAL</name>
+                            <name>{HOST.NAME} - {#VHOSTNAME} - {#QUEUENAME} - CRITICAL</name>
                             <url/>
                             <status>0</status>
                             <priority>4</priority>
@@ -699,7 +699,7 @@
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template App RabbitMQ:rabbitmq[{#VHOSTNAME},queue_msgs,{#QUEUENAME}].last(0)}&gt;500 &amp; {Template App RabbitMQ:rabbitmq[{#VHOSTNAME},queue_msgs,{#QUEUENAME}].last(0)}&lt;1000</expression>
-                            <name>{#NODENAME}/{#VHOSTNAME}/{#QUEUENAME} - Warning</name>
+                            <name>{HOST.NAME} - {#VHOSTNAME} - {#QUEUENAME} - Warning</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
